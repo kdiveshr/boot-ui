@@ -159,6 +159,7 @@
                             <target>
                                 <!-- Unattached input for the runnable jar; the client and sources need no CLI or docs copy. -->
                                 <jar destfile="${project.build.directory}/cli-docs.jar"
+                                     modificationtime="${project.build.outputTimestamp}"
                                      basedir="${project.build.outputDirectory}"
                                      includes="bootui-docs/**,bootui-tools.json,io/github/jdubois/bootui/cli/*"/>
                             </target>
